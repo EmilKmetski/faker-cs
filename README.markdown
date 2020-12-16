@@ -14,7 +14,7 @@ C# port of the Ruby Faker gem (http://faker.rubyforge.org/) and is used to easil
 	currencies,
 	enums,
 	finance (isin, ticker, coupon, maturity, bond name),
-	identification (social security number (US), MBI (US), national insurance number (UK), passport number (UK & US))
+	identification (social security number (US), MBI (US), national insurance number (UK), passport number (UK & US), Bulgarian Person Identification Number(PIN/ENG))
 	internet (email, domain names, user names),
 	lorem ipsum,
 	names,
@@ -40,6 +40,7 @@ var nin = Faker.Identification.UkNationalInsuranceNumber(); // YA171053Y
 var dob = Faker.Identification.DateOfBirth(); // 1971-11-16T00:00:00.0000000Z
 var ukPassport = Faker.Identification.UkPassport(); // 496675685
 var usPassport = Faker.Identification.UsPassport(); // 335587506
+var bulgarianPin = Faker.Identification.BulgarianPin(); //6402142606
 
 ```
 
@@ -53,7 +54,8 @@ Supported versions:
 	.NET Standard 2.0,
 	.NET Standard 2.1,
 	.NET Core 3.0,
-	.NET Core 3.1
+	.NET Core 3.1,
+	.NET 5.0
 
 No longer supported in nuGet package (1.1 going forward):
 
